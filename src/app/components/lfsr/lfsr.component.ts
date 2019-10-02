@@ -13,6 +13,7 @@ export class LfsrComponent implements OnInit {
   s: Array<number> = [1, 1, 1, 1];
   f: number | string = 'n/a';
   out: string = "";
+  states: Array<Array<number>> = []; 
 
   public barChartOptions: ChartOptions = {
     responsive: true,
@@ -64,6 +65,7 @@ export class LfsrComponent implements OnInit {
     this.round ++; 
     this.shift();
     this.updateChart();
+    this.states.unshift([...this.s]);
   }
 
   shift() {
