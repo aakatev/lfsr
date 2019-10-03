@@ -65,7 +65,7 @@ export class LfsrComponent implements OnInit {
     this.round ++; 
     this.shift();
     this.updateChart();
-    this.states.unshift([...this.s]);
+    this.states.push([...this.s]);
   }
 
   shift() {

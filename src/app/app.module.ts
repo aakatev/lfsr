@@ -7,11 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { LfsrComponent } from './components/lfsr/lfsr.component';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LfsrComponent
+    LfsrComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
