@@ -10,16 +10,16 @@
     </div>
   </div>
   <div class="row py-3 justify-content-center">
-    <div class="col-8">
-      <p>Round: {{round}}</p>
-      <p>
-        p: {{p|json}}
-      </p>
-      <p>
-        s: {{s|json}}
-      </p>
-      <p>f: {{f}}</p>
-      <p>output: {{out}}</p>
+    <div class="col-6">
+      <div class="card">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Round: </strong>{{round}}</li>
+          <li class="list-group-item"><strong>Feedback Path: </strong>{{p|json}}</li>
+          <li class="list-group-item"><strong>Initial State: </strong>{{s|json}}</li>
+          <li class="list-group-item"><strong>Feedback Bit: </strong>{{f}}</li>
+          <li class="list-group-item"><strong>Output: </strong>{{out}}</li>
+        </ul>
+      </div>
     </div>
     <div class="col-auto">
       <button type="button" class="btn btn-success" (click)="onNextRound()">Next Round</button>
@@ -28,8 +28,10 @@
   <div class="row py-3 justify-content-center">
     <div class="col-10">
       <!-- <p>States</p>
-      <p>{{states|json}}</p> -->
-      <app-table [states]="states"></app-table>
+      <p>{{states|json}}</p> -->  
+      <div class="table-responsive">
+        <app-table [states]="states"></app-table>
+      </div>
     </div>
   </div>
 </div>
