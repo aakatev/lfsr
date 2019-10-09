@@ -34,13 +34,13 @@ export class EeaComponent implements OnInit {
   }
 
   onR0Change(val) {
-    console.log(val);
+    // console.log(val);
     this.r[0] = Number(val);
     this.run();
   }
 
   onR1Change(val) {
-    console.log(val);
+    // console.log(val);
     this.r[1] = Number(val);
     this.run();
   }
