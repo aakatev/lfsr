@@ -8,12 +8,14 @@ import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { LfsrComponent } from './components/lfsr/lfsr.component';
 import { TableComponent } from './components/table/table.component';
+import { EeaComponent } from './components/eea/eea.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LfsrComponent,
-    TableComponent
+    TableComponent,
+    EeaComponent
   ],
   imports: [
     BrowserModule,
